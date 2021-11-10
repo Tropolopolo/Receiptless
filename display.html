@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Display Reciept Data</title>
+	</head>
+	
+	<meta charset="UTF-8">
+	
+	<style>
+		h1 {text-align: center;}
+		p {text-align: center;}
+		.Body{
+			background-color: steelblue;
+		}
+		
+		.grid-item{
+			transition-duration: 1.0s;
+			background-color: hsl(180, 100%, 90%);
+			font-size: 75%;
+			align-content: center;
+			border: solid white;
+			border-radius: 4px;
+		}
+		
+		.grid-item:hover{
+			background-color: lightcyan;
+			border: solid mediumturquoise;
+			
+		}
+		
+		.grid-container{
+			display: grid;
+			grid-gap: 30px;
+			grid-template-columns: auto;
+			grid-template-rows: auto auto;
+		}
+		
+		.btn {
+			transition-duration: 0.5s;
+			background-color: hsla(0,0%,0%,0);
+			border: white;
+			border-width: 2px;
+			width: 100%;
+			height: 100%;
+			font-weight: bold;
+			font-size: 100%;
+			text-align: center;
+		}
+		
+		.btn:hover{
+			background-color: lightcyan;
+			font-size: 150%;
+		}
+		
+		.subbtn {
+			transition-duration: 0.5s;
+			background-color: lightblue;
+			border: white;
+			border-width: 2px;
+			width: 20%;
+			height: 100%;
+			font-weight: bold;
+			font-size: 100%;
+			text-align: center;
+			border: solid mediumturquoise;
+			margin-top: 4px;
+		}
+		
+		.form{
+			font-size: 200%;
+			font-weight: bold;
+		}
+		
+		.textbox {
+		transition-duration: 0.5s;
+			width: 200px;
+			border-radius: 4px;
+			border: solid mediumturquoise;
+		}
+		
+		input[type=text]{
+			color: black;
+			background-color: lightblue;
+		}
+		
+		input[type=text]:focus{
+			font-size: 150%;
+			width: 50%;
+		}
+		
+		.fldset{
+			border: solid mediumturquoise; 
+		}
+	</style>
+	
+	<script>
+		function changeValue(id, str)
+			{
+				document.getElementById(id).value = str;
+			}
+	</script>
+	
+	<body class="Body">
+		<div class="grid-container">
+			<div class="grid-item">
+				<form method="post" action="displayData.php" class="form">
+					<fieldset class="fldset">
+						<legend> Display Reciept Data </legend>
+						<label id="label" for="email">User Email</label></br>
+						<input type="text" name="email" placeholder="Enter Email Address" class="textbox"> </br>
+						<input id="txtsubmit" type="submit" name="submit" class="subbtn"></br>
+					</fieldset>
+				</form>
+			</div>
+			<div class="grid-item">
+				<form method="post" action="displayData.php" class="form">
+					<input id="all" type="submit" class="btn" value="Display All Receipts" onmouseover="changeValue('all', 'Click here to display all receipts')" onmouseleave="changeValue('all', 'Display All Receipts')"/>
+				</form>
+			</div>
+			<div class="grid-item">
+				<a href="Main.html" class="form">
+					<input id="back" type="button" class="btn" value="Go Back" onmouseover="changeValue('back', 'Click here to Go Back')" onmouseleave="changeValue('back', 'Go Back')"/>
+				</a>
+			</div>
+		</div>
+	</body>
+</html>

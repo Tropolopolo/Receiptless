@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Update Data</title>
+	</head>
+	
+	<meta charset="UTF-8">
+	
+	<body>
+		<form method="post" action="spentData.php">
+			<fieldset>
+			    <legend>Enter Information to Query</legend>
+				<p>Sort by Users who have spent:</p>
+				<input type="radio" id="stand" name="sort" value="More">
+				<label for="More">More Than</label><br>
+				<input type="radio" id="prem" name="sort" value="Less">
+				<label for="Less">Less Than</label><br>
+				<label id="label" for="dollar">Dollar Amount</label></br>
+				<input type="text" name="dollar" placeholder="Enter Dollar Amount" > </br>
+				<input id="button" type="submit" name="submit"></br>
+			</fieldset>
+		</form>
+		  
+		<form action="Main.html">
+			<input type="submit" value="Go Back" />
+		</form>
+	</body>
+</html>

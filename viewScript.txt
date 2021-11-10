@@ -1,0 +1,4 @@
+CREATE VIEW totalpercustomer (phoneNum, total) AS
+select PhoneNum, SUM(Total)
+From receiptdata
+GROUP BY PhoneNum

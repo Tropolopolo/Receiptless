@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<head>
+		<style>
+		h1 {text-align: center;}
+		p {text-align: center;}
+		.Body{
+			background-color: steelblue;
+		}
+		
+		.grid-item{
+			transition-duration: 1.0s;
+			background-color: hsl(180, 100%, 90%);
+			font-size: 75%;
+			align-content: center;
+			border: solid white;
+			border-radius: 4px;
+		}
+		
+		.grid-item:hover{
+			background-color: white;
+			border: solid mediumturquoise;
+			
+		}
+		
+		.grid-container{
+			display: grid;
+			grid-gap: 30px;
+			grid-template-columns: auto auto;
+			grid-template-rows: 200px 200px 200px 200px;
+		}
+		
+		.btn {
+			transition-duration: 0.5s;
+			background-color: hsla(0,0%,0%,0);
+			border: white;
+			border-width: 2px;
+			width: 100%;
+			height: 100%;
+			font-weight: bold;
+			font-size: 200%;
+			text-align: center;
+		}
+		
+		.btn:hover{
+			background-color: white;
+			font-size: 250%;
+		}
+		</style>
+		
+		<script>
+			function changeValue(id, str)
+			{
+				document.getElementById(id).value = str;
+			}
+		</script>
+		
+		<title>Main Menu</title>
+	</head>
+	<body class="Body">
+		
+		<div class="grid-container">
+			<div class="grid-item">
+				<a href="display.html">
+					<input id="Select" type="button" class="btn" value="Select" onmouseover="changeValue('Select', 'Click here to display your select query')" onmouseleave="changeValue('Select', 'Select')"/>
+				</a>
+			</div>
+			
+			<div class="grid-item">
+			
+				<a href="update.html">
+					<input id="Update" type="button" class="btn" value="Update" onmouseover="changeValue('Update', 'Click here to update your personal information or account type')" onmouseleave="changeValue('Update', 'Update')"/>
+				</a>
+				
+			</div>
+			<div class="grid-item">
+			
+				<a href="delete.html">
+					<input id="Delete" type="button" class="btn" value="Delete" onmouseover="changeValue('Delete', 'Click here to take off your account(s) with us')" onmouseleave="changeValue('Delete', 'Delete')"/>
+				</a>
+
+			</div>
+			<div class="grid-item">
+			
+				<a href="totals.html">
+					<input id="Total per customer" type="button" class="btn" value="Total per customer" onmouseover="changeValue('Total per customer', 'Click here to update your personal information or account type')" onmouseleave="changeValue('Total per customer', 'Total per customer')"/>
+				</a>
+				
+			</div>
+			<div class="grid-item">
+			
+				<a href="spent.html">
+					<input id="Views total list" type="button" class="btn" value="Views total list" onmouseover="changeValue('Views total list', 'Click here to query the view for total amount(s)')" onmouseleave="changeValue('Views total list', 'Views total list')"/>
+				</a>
+				
+			</div>
+			
+			<!--
+			<div class="grid-item">
+			
+				<a href="totalsequality.html">
+					<input id="Equality View" type="button" class="btn" value="Equality View" onmouseover="changeValue('Equality View', 'Click here to look at different totals')" onmouseleave="changeValue('Equality View', 'Equality View')"/>
+				</a>
+	
+			</div>
+			<div class="grid-item">
+			
+				<a href="Landing.html">
+					<input id="Go Back To Landing Page" type="button" class="btn" value="Go Back To Landing Page" onmouseover="changeValue('Go Back To Landing Page', 'Click here to go back to the landing page')" onmouseleave="changeValue('Go Back To Landing Page', 'Go Back To Landing Page')"/>
+				</a>
+			</div>
+			
+			<div class="grid-item">
+			
+				<a href="insert.html">
+					<input id="Insert" type="button" class="btn" value="Insert" onmouseover="changeValue('Insert', 'Click here to Insert')" onmouseleave="changeValue('Insert', 'Insert')"/>
+				</a>
+
+			</div>
+			-->
+		</div> 
+		
+	</body>
+</html>

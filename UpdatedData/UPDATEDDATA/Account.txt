@@ -1,0 +1,8 @@
+Account Number	Rewards	Type	Email	PhoneNumber
+1016055760	10005	Premium	johnsmith01@gmail.com	254-290-6551
+1014281052	2050	Standard	hotshot22@yahoo.com	817-656-8931
+1362124460	1025	Standard	emilyaustinjones@hotmail.com	901-606-3058
+1234521342	1000	Premium	HudsonBrown3233@gmail.com	202-555-0132
+1002343221	0	Standard	2theab.aljarb@hotmail.red	202-555-0198
+1234445233	25020	Premium	6sara-ann5@gmail.com	512-555-0131
+1200034442	250	Standard	wprince@tapiitudulu.com	803-555-0196

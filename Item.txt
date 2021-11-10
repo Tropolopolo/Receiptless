@@ -1,0 +1,16 @@
+ItemList	Item Name	Item Cost	Quantity
+779617	Colgate toothpaste	3.75	2
+779617	Rum Ham	13.24	1
+336941	Blue Gatorade	1.5	3
+336941	Arm and Hammer Detergent	5.1	1
+336941	Ibuprofen	6.25	1
+698596	Bang Energy Drink	1.25	2
+698596	Water	1.5	3
+698596	Skittles Part Size	3.5	1
+836393	Powdered Donuts	4.5	2
+836393	Pineapple	2.4	2
+836393	Radio	22.31	1
+30550	Gas	1.32	10
+777899	Apple	1.5	2
+777899	Bread	3.25	1
+777899	Cinnamon	5	1

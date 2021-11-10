@@ -1,0 +1,1 @@
+<div class='grid-item'>Phone Number updated in Account and will reflect in ReceiptData.</div><div class='grid-item'>Account Type updated.</div>
